@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Rowdies:wght@300&family=Source+Sans+Pro:wght@200;400&family=Ubuntu:wght@700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    max-width:  768px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 15px 5px;
+    background-image: url("./caffe_sloga_pozadina2.png");
+    background-size: cover;
+    font-family: "Roboto";
+    color: white;
+  }
+.grid {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    grid-template-columns: auto 35px 60px ;
+    overflow-x: hidden;
+    column-gap: 10px;
+    font-size: 12px;
+    
+  }
+  .grid div:nth-child(2){
+    text-align: center;
+  }
+  .grid div:last-child{
+    text-align: center;
+  }
+  .stats-heading {
+    max-width: 500px;
+    margin: auto;
+   font-size: 25px;
+   padding-bottom: 20px;
+  }
+  img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .stats  h3 {
+    font-size: 35px;
+  }
+  h2{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  h4{
+    font-size: 14px;
+  }
+  span{
+    
+    font-weight: 100;
+    opacity: 0.65;
+  }
+  .naslov{
+      word-wrap: break-word;
+      font-size: 12px;
+      line-height: 22px;
+  }
+  .naslov span{
+     
+      font-size: 9px;
+      opacity: 0.7;
+  }
+  @media (min-width: 768px) {
+    .grid{
+      grid-template-columns: auto 80px 120px ;
+      font-size: 22px;
+      column-gap: 20px;
+    
+    }.naslov{
+      font-size: 22px;
+    }
+    .naslov span{
+      font-size: 16px;
+      opacity: 0.75;
+  }
+    
+  }
